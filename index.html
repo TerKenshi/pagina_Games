@@ -73,8 +73,9 @@
                                 <div class="tags">
                                     <span class="tag">FPS</span><span class="tag">Acción</span>
                                 </div>
-                                <button class="btn" style="padding:8px 10px">Comprar</button>
+                                <button class="btn btn-small"onclick="playSound()">Comprar</button>
                             </div>
+                        
                         </div>
                     </article>
 
@@ -92,7 +93,7 @@
                                 <div class="tags">
                                     <span class="tag">RPG</span><span class="tag">Coop</span>
                                 </div>
-                                <button class="btn" style="padding:8px 10px">Comprar</button>
+                                <button class="btn btn-small">Comprar</button>
                             </div>
                         </div>
                     </article>
@@ -111,7 +112,7 @@
                                 <div class="tags">
                                     <span class="tag">Terror</span><span class="tag">Survival</span>
                                 </div>
-                                <button class="btn" style="padding:8px 10px">Comprar</button>
+                                <button class="btn btn-small">Comprar</button>
                             </div>
                         </div>
                     </article>
@@ -151,5 +152,12 @@
             <div style="color:var(--muted)">Soporte · Términos · Privacidad</div>
         </footer>
     </div>
+    
+    <script>
+        function playSound() {
+            const audio = new Audio('SONIDO/sonido.mp3');
+            audio.play();
+        }
+    </script>
 </body>
 </html>
